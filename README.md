@@ -22,7 +22,20 @@ sudo mkdir documents
 cd /mnt/
 sudo chmod 777 * 
 ```
-#### 4a. Execute scripts for mount/umount 
+#### 4a. Create file with user credentials for accessing windows share
+
+```
+touch ~/Linux/kredencijali
+```
+
+#### 4b. Insert into `kredencijali` file folowing text
+```
+username=
+password=
+domain=
+```
+
+#### 5a. Execute scripts for mount/umount 
 
 **mount**
 ```
@@ -35,7 +48,7 @@ cd ~/Linux/
 sh umount.sh
 ```
 
-#### 4b. Or create alias `mountpc` and `umountpc` (add following lines under alias section of `.bashrc` file)
+#### 5b. Or create alias `mountpc` and `umountpc` (add following lines under alias section of `.bashrc` file)
 
 ```
 alias mountpc='sh /home/denis/Linux/mount.sh'
