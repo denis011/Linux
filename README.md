@@ -1,11 +1,11 @@
 ## Mount share from windows computer
 
-### 1. Install cifs-utils
+#### 1. Install cifs-utils
 
 ```
 sudo apt-get install cifs-utils
 ```
-### 2. Create folders where to mount windows shares 
+#### 2. Create folders where to mount windows shares 
 
 ```
 cd /mnt/
@@ -16,13 +16,13 @@ sudo mkdir install
 sudo mkdir documents
 ```
 
-### 3. Change permissions on folders
+#### 3. Change permissions on folders
 
 ```
 cd /mnt/
 sudo chmod 777 * 
 ```
-### 4a. Execute scripts for mount/umount 
+#### 4a. Execute scripts for mount/umount 
 
 **mount**
 ```
@@ -35,10 +35,10 @@ cd ~/Linux/
 sh umount.sh
 ```
 
-### 4b. Or create alias `mountpc` and `umountpc` (add following lines under alias section of `.bashrc` file)
+#### 4b. Or create alias `mountpc` and `umountpc` (add following lines under alias section of `.bashrc` file)
 
 ```
-alias mountpc='sh ~/Linux/mount.sh'
-alias umountpc='sh ~/Linux/umount.sh'
+alias mountpc='sh /home/denis/Linux/mount.sh'
+alias umountpc='sh /home/denis/Linux/umount.sh'
 ```
 
