@@ -30,9 +30,9 @@ touch ~/Linux/kredencijali
 
 #### 4b. Insert into `kredencijali` file folowing text
 ```
-username=
-password=
-domain=
+username=user
+password=pass
+domain=your_local_network
 ```
 
 #### 5a. Execute scripts for mount/umount 
